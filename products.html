@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products | RMC Foods Nepal</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/fontawesome-free-5.15.4.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!--Navigation Starts-->
+     <nav id="navigation" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="RMC Foods logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="companyprofile.html">About Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://www.rmcnepal.com/" target="_blank">RMC Nepal</a></li>
+                                <li><a class="dropdown-item" href="companyprofile.html">Company Profile</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item position-relative hide-display">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="cooking-oil.html">Nutriplus Refined Cooking Oil</a></li>
+                                <li><a class="dropdown-item" href="bakery-shortening.html">Nutriwell Bakery Shortening</a></li>
+                            </ul> 
+                        </li>
+                         <li class="nav-item position-relative display-hide">
+                            <a class="nav-link active navs-products" href="products.html" aria-expanded="false">Products</a>
+                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="cooking-oil.html">Nutriplus Refined Cooking Oil</a></li>
+                                <li><a class="dropdown-item" href="bakery-shortening.html">Nutriplus Bakery Shortening</a></li>
+                            </ul> -->
+                        </li>
+                        <!-- <script src="js/bootstrap.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+                        <script src="js/owl.carousel.js"></script>
+                        <script src="js/contact.js"></script>
+                        <script src="js/all.js"></script> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News & Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                        </li>
+                        <li class="social-media d-flex justify-content-xl-center align-items-center">
+                            <ul class="d-flex justify-content-center align-items-center">
+                                <li>
+                                    <a href="https://www.facebook.com/nutriplusnp" class="d-flex justify-content-center align-items-center" target="_blank">
+                                        <img src="img/social-facebook.svg" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/nutriplusnp/" class="d-flex justify-content-center align-items-center" target="_blank">
+                                        <img src="img/social-instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@nutriplusnp" class="d-flex justify-content-center align-items-center" target="_blank">
+                                        <img src="img/social-youtube.svg" alt="youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="product-hover-div" class="product-hover display-hide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-image-div">
+                                <a href="cooking-oil.html" class="text-decoration-none text-dark"><img src="img/Nutriplus.jpg"  alt="Product Image 1">
+                                <p class="mt-2">NutriPlus Refined Cooking Oil</p>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-image-div">
+                               <a href="bakery-shortening.html" class="text-decoration-none text-dark"><img src="img/Nutriwell.jpg" alt="Product Image 2">
+                                <p class="mt-2">Nutriwell Bakery Shortening</p>
+                            </a>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation Ends-->
+    <div class="line"></div>
+
+
+    <!--Main Starts-->
+    <main role="main">
+        <section class="page-name">
+            <div class="container">Our Products</div>
+        </section>
+        <div class="products sp">
+            <div class="container">
+                <ul class="nav nav-pills mb-3 grid" id="pills-tab" role="tablist">
+                    <li class="nav-item grid-item" role="presentation">
+                        <div class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <div class="product-img d-lg-flex justify-content-center d-none">
+                                <img src="img/product-1.png" alt="image">
+                            </div>
+                            <div class="product-name d-flex justify-content-center">
+                                NutriPlus Sunflower Oil
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item grid-item" role="presentation">
+                        <div class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <div class="product-img d-lg-flex justify-content-center d-none">
+                                <img src="img/product-2.png" alt="image">
+                            </div>
+                            <div class="product-name d-flex justify-content-center">
+                                NutriPlus Soybean Oil
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item grid-item" role="presentation">
+                        <div class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <div class="product-img d-lg-flex justify-content-center d-none">
+                                <img src="img/product-3.png" alt="image">
+                            </div>
+                            <div class="product-name d-flex justify-content-center">
+                                NutriPlus Palmolein Oil
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <h3>NutriPlus Sunflower Oil</h3>
+                        <div class="table-responsive w-100">
+                            <table class="table align-middle w-100 nutriplus-table">
+                                <thead>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>Nutritional Information</h5>
+                                            <p>Approximate compostion per 100g</p>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Energy</td>
+                                        <td>900Kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protein & Carbohydrate</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cholesterol</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fat</td>
+                                        <td>100 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans Fat (NMT)</td>
+                                        <td>2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturated Fat (NMT)</td>
+                                        <td>17 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monounsaturated Fat(MIN)</td>
+                                        <td>22 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Polyunsaturate Fat(MIN)</td>
+                                        <td>47 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <h3>NutriPlus Soybean Oil </h3>
+                        <div class="table-responsive w-100">
+                            <table class="table align-middle w-100 nutriplus-table">
+                                <thead>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>Nutritional Information</h5>
+                                            <p>Approximate compostion per 100g</p>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Energy</td>
+                                        <td>900Kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protein & Carbohydrate</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cholesterol</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fat</td>
+                                        <td>100 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans Fat (NMT)</td>
+                                        <td>2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturated Fat (NMT)</td>
+                                        <td>21 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monounsaturated Fat(MIN)</td>
+                                        <td>17 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Polyunsaturate Fat(MIN)</td>
+                                        <td>49 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <h3>NutriPlus Palmolein Oil</h3>
+                        <div class="table-responsive w-100">
+                            <table class="table align-middle w-100 nutriplus-table">
+                                <thead>
+                                    <tr>
+                                        <td colspan="2">
+                                            <h5>Nutritional Information</h5>
+                                            <p>Approximate compostion per 100g</p>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Energy</td>
+                                        <td>900Kcal</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protein & Carbohydrate</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cholesterol</td>
+                                        <td>0 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fat</td>
+                                        <td>100 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans Fat (NMT)</td>
+                                        <td>2 g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturated Fat (NMT)</td>
+                                        <td>51 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="products sp">
+            <div class="container">
+                <h3 class="text-center">Our Products</h3>
+                <div class="grid">
+                    <div class="grid-item">
+                        <div class="product-img d-flex justify-content-center">
+                            <img src="img/product-1.png" alt="image">
+                        </div>
+                        <div class="product-name d-flex justify-content-center">
+                            NutriPlus Sunflower Oil
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="product-img d-flex justify-content-center">
+                            <img src="img/product-2.png" alt="image">
+                        </div>
+                        <div class="product-name d-flex justify-content-center">
+                            NutriPlus Soybean Oil
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="product-img d-flex justify-content-center">
+                            <img src="img/product-3.png" alt="image">
+                        </div>
+                        <div class="product-name d-flex justify-content-center">
+                            NutriPlus Palmolein Oil
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <section class="nutritional-facts sp">
+            <div class="container">
+                <div class="nutri-box">
+                    <div class="nutri-box-line">
+                        <h4>Nutritional Facts</h4>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-5">
+                        <div class="title-group">
+                            <div class="title-head">
+                                NutriPlus Sunflower Oil
+                            </div>
+                            <div class="title-img">
+                                <img src="img/nutri-img-1.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="title-content h-100 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+                            <div class="table-responsive w-100">
+                                <table class="table align-middle w-100 nutriplus-table">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h5>Nutritional Information</h5>
+                                                <p>Approximate compostion per 100g</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Energy</td>
+                                            <td>900Kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Protein & Carbohydrate</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cholesterol</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fat</td>
+                                            <td>100 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trans Fat (NMT)</td>
+                                            <td>2 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saturated Fat (NMT)</td>
+                                            <td>17 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monounsaturated Fat(MIN)</td>
+                                            <td>22 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Polyunsaturate Fat(MIN)</td>
+                                            <td>47 g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-5">
+                        <div class="title-group">
+                            <div class="title-head">
+                                NutriPlus Soybean Oil
+                            </div>
+                            <div class="title-img">
+                                <img src="img/nutri-img-2.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="title-content h-100 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+                            <div class="table-responsive w-100">
+                                <table class="table align-middle w-100 nutriplus-table">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h5>Nutritional Information</h5>
+                                                <p>Approximate compostion per 100g</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Energy</td>
+                                            <td>900Kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Protein & Carbohydrate</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cholesterol</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fat</td>
+                                            <td>100 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trans Fat (NMT)</td>
+                                            <td>2 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saturated Fat (NMT)</td>
+                                            <td>21 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monounsaturated Fat(MIN)</td>
+                                            <td>17 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Polyunsaturate Fat(MIN)</td>
+                                            <td>49 g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-5">
+                        <div class="title-group">
+                            <div class="title-head">
+                                Palmolein Oil
+                            </div>
+                            <div class="title-img">
+                                <img src="img/nutri-img-3.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="title-content h-100 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+                            <div class="table-responsive w-100">
+                                <table class="table align-middle w-100 nutriplus-table">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h5>Nutritional Information</h5>
+                                                <p>Approximate compostion per 100g</p>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Energy</td>
+                                            <td>900Kcal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Protein & Carbohydrate</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cholesterol</td>
+                                            <td>0 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fat</td>
+                                            <td>100 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trans Fat (NMT)</td>
+                                            <td>2 g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saturated Fat (NMT)</td>
+                                            <td>51 g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+    <!--Main Ends-->
+
+    <!--Footer Starts-->
+    <footer id="footer" class="sp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d883.2127856729888!2d85.3181133!3d27.6909953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1946e1338927%3A0xcd26189b7cf61bb3!2sRajesh%20Metal%20Crafts%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1703064392932!5m2!1sen!2snp"
+                            width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <address>
+                        <ul>
+                            <li>
+                                <h4>Location</h4>
+                                <p>RMC Foods, Central Business Park, Thapathali, <br>
+                                    Kathmandu, Nepal</p>
+                            </li>
+                            <li>
+                                <h4>Email</h4>
+                                <p>info@rmcnepal.com</p>
+                            </li>
+                            <li>
+                                <h4>Phone</h4>
+                                <p>+977-1-5901385 / +977-1-5315832</p>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="col-md-6">
+                    <form action="#" class="custom-form">
+                        <h3>For Inquiry</h3>
+                        <div class="form-group">
+                            <!-- <label for="" class="form-label">Title Label</label> -->
+                            <input type="text" class="form-control" id="fullname" placeholder="Your Full Name...">
+                            <div class="form-text d-none">Error Text</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="" class="form-label">Title Label</label> -->
+                            <input type="text" class="form-control" id="subject" placeholder="Subject...">
+                            <div class="form-text d-none">Error Text</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="" class="form-label">Title Label</label> -->
+                            <textarea name="comment" id="comment" class="form-control" placeholder="Let’s know how we can help you..."></textarea>
+                            <div class="form-text d-none">Error Text</div>
+                        </div>
+                        <a href="javascript:void(0);" onclick="submitform()" class="btn btn-outline-primary text-uppercase">
+                            Submit
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 18 9" style="enable-background:new 0 0 18 9;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill:#ee3d49;}
+                                </style>
+                                <polygon class="st0" points="0,4 16.6,4 12.6,0 14,0 18,4 18,5 14,9 12.6,9 16.6,5 0,5 "/>
+                            </svg>
+                        </a>
+                    </form>
+                    <div class="footer-right d-flex flex-column align-items-start align-items-lg-end">
+                        <p>&copy; Copyright by RMC Foods Pvt. Ltd., RMC Group.</p>
+
+
+                        <p class="designedby d-flex justify-content-center align-items-center d-none">Designed By
+                            <a href="http://kodiary.com" target="_blank">
+                                <img src="img/logo-kodiary.svg" alt="Kodiary Logo">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Ends-->
+
+    <!-- Scroll Top Starts -->
+    <div class="top-btn"><img src="img/top.png" alt="icon"></div>
+    <!-- Scroll Top Ends -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="js/contact.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

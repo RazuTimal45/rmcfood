@@ -1,23 +1,39 @@
 
 document.addEventListener("DOMContentLoaded", function () {
- var productLink = document.querySelector('.navs-products[href="products.html"]');
- var productHover = document.getElementById('product-hover-div');
- var timeoutId;
+ //var productLink = document.querySelector('.navs-products[href="products.html"]');
+ var productLinks = document.querySelectorAll('.navs-products');
 
- // Use mouseover and mouseleave on the productLink and productHover
- if(productLink){
- productLink.addEventListener("mouseover", function () {
-     clearTimeout(timeoutId);
+productLinks.forEach(function(link) {
+  if (link.getAttribute('href') === 'products.html') {
+    // Perform actions for the matching link
+    // For example:
+    link.addEventListener('mouseover', function() {
+       clearTimeout(timeoutId);
      productHover.style.display = 'block';
- });
- }
-  if(productLink){
- productLink.addEventListener("mouseleave", function () {
+    });
+   link.addEventListener('mouseleave', function() {
      timeoutId = setTimeout(function () {
          productHover.style.display = 'none';
      }, 1100);
  });
-  }
+});
+ var productHover = document.getElementById('product-hover-div');
+ var timeoutId;
+
+ // Use mouseover and mouseleave on the productLink and productHover
+ // if(productLink){
+ // productLink.addEventListener("mouseover", function () {
+ //     clearTimeout(timeoutId);
+ //     productHover.style.display = 'block';
+ // });
+ // }
+ //  if(productLink){
+ // productLink.addEventListener("mouseleave", function () {
+ //     timeoutId = setTimeout(function () {
+ //         productHover.style.display = 'none';
+ //     }, 1100);
+ // });
+ //  }
   if(productHover){
  productHover.addEventListener("mouseover", function () {
      clearTimeout(timeoutId);

@@ -463,9 +463,9 @@ ul {
     /* transform: scale(1.08); */
 }
 /* Default styling for larger screens */
-.hide-display {
+/* .hide-display {
     display: none;
-}
+} */
 
 /* Media query for screens up to 767px (typical mobile width) */
 @media (max-width: 767px) {

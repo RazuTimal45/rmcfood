@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
  //var productLink = document.querySelector('.navs-products[href="products.html"]');
  var productLinks = document.querySelectorAll('.navs-products');
+  var productHover = document.getElementById('product-hover-div');
+ var timeoutId;
 
 productLinks.forEach(function(link) {
   if (link.getAttribute('href') === 'products.html') {
@@ -17,8 +19,7 @@ productLinks.forEach(function(link) {
      }, 1100);
  });
 });
- var productHover = document.getElementById('product-hover-div');
- var timeoutId;
+
 
  // Use mouseover and mouseleave on the productLink and productHover
  // if(productLink){

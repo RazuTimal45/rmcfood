@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function () {
- var productLink = document.querySelector('.navs-products[href="products.html"]');
+ var productLink = document.querySelector('.navs-products[href="#"]');
  var productLinks = document.querySelectorAll('.navs-products');
   var productHover = document.getElementById('product-hover-div');
  var timeoutId;

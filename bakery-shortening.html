@@ -455,6 +455,16 @@
             if (activeTab) {
                 activeTab.classList.add('active');
             }
+                                    // Remove the 'id' parameter from the URL
+    var newUrl = window.location.href.split('?')[0];
+    history.replaceState({}, document.title, newUrl);
+
+    // Add 'active' class to the specific tab pane based on the 'id' parameter
+            var paneId = 'product' + productId;
+    var activePane = document.getElementById(paneId);
+    if (activePane) {
+        activePane.classList.add('active','show');
+    }
         }
         </script>
 </body>

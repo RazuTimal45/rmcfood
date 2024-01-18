@@ -190,7 +190,7 @@
                     </div>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="product3" role="tabpanel" aria-labelledby="product3-tab">
+                    <div class="tab-pane fade" id="product3" role="tabpanel" aria-labelledby="product3-tab">
                         <h3>Lite</h3>
                         <div class="table-responsive w-100">
                             <table class="table align-middle w-100 nutriplus-table">
@@ -455,6 +455,16 @@
             if (activeTab) {
                 activeTab.classList.add('active');
             }
+                                    // Remove the 'id' parameter from the URL
+    var newUrl = window.location.href.split('?')[0];
+    history.replaceState({}, document.title, newUrl);
+
+    // Add 'active' class to the specific tab pane based on the 'id' parameter
+            var paneId = 'product' + productId;
+    var activePane = document.getElementById(paneId);
+    if (activePane) {
+        activePane.classList.add('active','show');
+    }
                                     // Remove the 'id' parameter from the URL
     var newUrl = window.location.href.split('?')[0];
     history.replaceState({}, document.title, newUrl);

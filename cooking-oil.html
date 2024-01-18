@@ -728,6 +728,35 @@
     <script src="js/contact.js"></script>
     <script src="js/all.js"></script>
     <script src="js/script.js"></script>
+        <script>
+        // Function to get URL parameter value
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+        // Get the 'id' parameter from the URL
+        var productId = getParameterByName('id');
+        
+        // Set the active tab based on the 'id' parameter
+        if (productId) {
+            // Remove 'active' class from all tabs
+            document.querySelectorAll('.nav-link').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+        
+            // Add 'active' class to the specific tab based on the 'id' parameter
+            var tabId = 'product' + productId + '-tab';
+            var activeTab = document.getElementById(tabId);
+            if (activeTab) {
+                activeTab.classList.add('active');
+            }
+        }
+        </script>
 </body>
 
 </html>

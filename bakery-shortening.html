@@ -428,54 +428,43 @@
     <script src="js/contact.js"></script>
     <script src="js/all.js"></script>
     <script src="js/script.js"></script>
-        <script>
-        // Function to get URL parameter value
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, "\\$&");
-            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, " "));
+           <script>
+// Function to get URL parameter value
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+// Get the 'id' parameter from the URL
+var productId = getParameterByName('id');
+
+    // Set the active tab based on the 'id' parameter
+    if (productId) {
+        // Remove 'active' class from all tabs
+        document.querySelectorAll('.nav-link').forEach(function (tab) {
+            tab.classList.remove('active');
+        });
+
+        // Add 'active' class to the specific tab based on the 'id' parameter
+        var tabId = 'product' + productId + '-tab';
+        var activeTab = document.getElementById(tabId);
+        if (activeTab) {
+            activeTab.classList.add('active');
         }
-        // Get the 'id' parameter from the URL
-        var productId = getParameterByName('id');
-        
-        // Set the active tab based on the 'id' parameter
-        if (productId) {
-            // Remove 'active' class from all tabs
-            document.querySelectorAll('.nav-link').forEach(function (tab) {
-                tab.classList.remove('active');
-            });
-        
-            // Add 'active' class to the specific tab based on the 'id' parameter
-            var tabId = 'product' + productId + '-tab';
-            var activeTab = document.getElementById(tabId);
-            if (activeTab) {
-                activeTab.classList.add('active');
-            }
-                                    // Remove the 'id' parameter from the URL
-    var newUrl = window.location.href.split('?')[0];
-    history.replaceState({}, document.title, newUrl);
-
-    // Add 'active' class to the specific tab pane based on the 'id' parameter
+            // Remove the 'id' parameter from the URL
+            var newUrl = window.location.href.split('?')[0];
+        history.replaceState({}, document.title, newUrl);
+            // Add 'active' class to the specific tab pane based on the 'id' parameter
             var paneId = 'product' + productId;
-    var activePane = document.getElementById(paneId);
-    if (activePane) {
-        activePane.classList.add('active','show');
-    }
-                                    // Remove the 'id' parameter from the URL
-    var newUrl = window.location.href.split('?')[0];
-    history.replaceState({}, document.title, newUrl);
-
-    // Add 'active' class to the specific tab pane based on the 'id' parameter
-            var paneId = 'product' + productId;
-    var activePane = document.getElementById(paneId);
-    if (activePane) {
-        activePane.classList.add('active','show');
-      }
-              // Delay the execution of the Owl Carousel code to ensure proper initialization
+        var activePane = document.getElementById(paneId);
+        if (activePane) {
+            activePane.classList.add('active','show');
+        }
+        // Delay the execution of the Owl Carousel code to ensure proper initialization
        setTimeout(function () {
         if (productId > 3) {
             // Simulate a click on the Owl Carousel's "Next" button
@@ -488,7 +477,7 @@
         }
     }, 500); // Adjust the delay time as needed
     }
-        </script>
+    </script>
 </body>
 
 </html>

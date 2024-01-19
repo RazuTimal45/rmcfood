@@ -167,7 +167,23 @@
                                     <div class="product-img d-lg-flex justify-content-center d-none">
                                         <img src="img/product-3.png" alt="image">
                                     </div>
-                                    <div class="product-name d-flex justify-content-center">
+                                    <div class="product-name d-flex// Delay the execution of the Owl Carousel code to ensure proper initialization
+setTimeout(function () {
+    if (productId > 3) {
+        // Simulate a click on the Owl Carousel's "Next" button
+        var owlNextButton = document.querySelector('.owl-next');
+        if (owlNextButton) {
+            owlNextButton.click();
+            // Add the 'active' class to the Owl Carousel's "Next" button
+            owlNextButton.classList.add('active');
+            // If productId is 5, slide Owl Carousel next one more time
+            if (productId == 5) {
+                owlNextButton.click();
+            }
+        }
+    }
+}, 500); // Adjust the delay time as needed
+ justify-content-center">
                                         NutriPlus Palmolein Oil
                                     </div>
                                 </div>
@@ -763,23 +779,23 @@ var productId = getParameterByName('id');
         if (activePane) {
             activePane.classList.add('active','show');
         }
-        // Delay the execution of the Owl Carousel code to ensure proper initialization
-       setTimeout(function () {
-        if (productId > 3) {
-            // Simulate a click on the Owl Carousel's "Next" button
-            var owlNextButton = document.querySelector('.owl-next');
-            if (owlNextButton) {
+// Delay the execution of the Owl Carousel code to ensure proper initialization
+setTimeout(function () {
+    if (productId > 3) {
+        // Simulate a click on the Owl Carousel's "Next" button
+        var owlNextButton = document.querySelector('.owl-next');
+        if (owlNextButton) {
+            owlNextButton.click();
+            // Add the 'active' class to the Owl Carousel's "Next" button
+            owlNextButton.classList.add('active');
+            // If productId is 5, slide Owl Carousel next one more time
+            if (productId == 5) {
                 owlNextButton.click();
-                // Add the 'active' class to the Owl Carousel's "Next" button
-                owlNextButton.classList.add('active');
-               // If productId is 5, slide Owl Carousel next one more time
-                if (productId == 5) {
-                    owlNextButton.click();
-                }
             }
         }
-        }
-    }, 500); // Adjust the delay time as needed
+    }
+}, 500); // Adjust the delay time as needed
+
     }
         
     </script>

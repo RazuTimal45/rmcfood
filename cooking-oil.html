@@ -766,6 +766,7 @@ var productId = getParameterByName('id');
         // Delay the execution of the Owl Carousel code to ensure proper initialization
        setTimeout(function () {
         if (productId > 3) {
+        if (productId == 5) {
             // Simulate a click on the Owl Carousel's "Next" button
             var owlNextButton = document.querySelector('.owl-next');
             if (owlNextButton) {
@@ -773,6 +774,7 @@ var productId = getParameterByName('id');
                 // Add the 'active' class to the Owl Carousel's "Next" button
                 owlNextButton.classList.add('active');
             }
+        }
         }
     }, 500); // Adjust the delay time as needed
     }
